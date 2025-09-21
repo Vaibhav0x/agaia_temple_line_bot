@@ -8,8 +8,8 @@ Create line bussiness account and in messaging api create and get the channel se
 ## Agaia Temple Flow Project Setup
 
 ```bash
-git clone
-cd 
+git clone https://github.com/Vaibhav0x/agaia_temple_line_bot.git
+cd agaia_temple_line_bot
 ```
 ### Environment
 create `.env` file into you project root directory
