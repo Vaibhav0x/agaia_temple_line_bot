@@ -166,6 +166,14 @@ def schedule_messages(user_id):
         run_date=now + datetime.timedelta(seconds=90),  # change to hours=72 for real
         args=[user_id, MESSAGES["day3_teaser"]]
     )
+    # Day 3 after +72h
+    scheduler.add_job(
+        send_message,
+        "date",
+        # run_date=now + datetime.timedelta(hours=72,minutes=10),
+        run_date=now + datetime.timedelta(seconds=92),  # change to hours=72 for real
+        args=[user_id, MESSAGES["rose_path"]]
+    )
 
 def send_message(user_id, message):
     messaging_api.push_message(
